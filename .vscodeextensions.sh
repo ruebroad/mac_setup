@@ -92,7 +92,7 @@ echo "Installing snippets"
 # code --install-extension humao.rest-client
 
 # XML Tools
-code --install dotjoshjohnson.xml
+code --install-extension dotjoshjohnson.xml
 code --install-extension ms-vscode.powershell
 
 # YAML support
