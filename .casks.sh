@@ -27,7 +27,7 @@ brew cask install slack
 brew cask install the-unarchiver
 # brew cask install tunnelblick
 # brew cask install vagrant
-# brew cask install virtualbox
+brew cask install virtualbox
 # brew cask install visual-studio
 # brew cask install vivaldi
 # brew cask install vlc
