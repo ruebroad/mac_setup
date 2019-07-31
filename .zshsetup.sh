@@ -11,8 +11,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # Install extensions
-brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install zsh-completions
+brew install zsh-autosuggestions
 
 echo "Moving zsh config files to user root"
 # Get and use pre-configured .zshrc file
@@ -23,3 +24,6 @@ sudo yes | cp -rf .zsh_aliases ~/.zsh_aliases
 
 # reload .zshrc
 source ~/.zshrc
+
+# Install the font from awesome-terminal-fonts & .fonts.sh
+# Select hack font 14pt

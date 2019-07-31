@@ -97,6 +97,8 @@ code --install-extension ms-vscode.powershell
 
 # YAML support
 code --install-extension redhat.vscode-yaml
+code --install-extension oderwat.indent-rainbow
+code --install-extension sirtori.indenticator
 
 # MSSQL
 code --install-extension ms-mssql.mssq
@@ -108,6 +110,7 @@ code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 code --install-extension aws-scripting-guy.cform
 code --install-extension pdefreitas.cf-octopus-generator
 code --install-extension champgm.cloudformation-yaml-validator
+\code --install-extension kddejong.vscode-cfn-lint
 
 # Python
 code --install-extension ms-python.python

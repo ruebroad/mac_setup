@@ -62,5 +62,9 @@ brew install wget
 brew install zsh
 brew install zsh-syntax-highlighting
 brew install zsh-completions
+brew install zsh-autosuggestions
+
+# Cloudformation
+brew install cfn-lint
 
 echo "Finished installing packages."

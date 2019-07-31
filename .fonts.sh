@@ -6,5 +6,6 @@ FONTS=(
     font-clear-sans
     font-source-code-pro-for-powerline
     font-meslo-for-powerline
+    font-hack
 )
 brew cask install ${FONTS[@]}

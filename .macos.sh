@@ -1,7 +1,7 @@
 COMPUTER_NAME="abroad"
 
 ## Add a real one before running
-$SSH_PASSPHRASE="Br0admoor?"
+$SSH_PASSPHRASE="***********?"
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -156,10 +156,10 @@ echo "Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
 defaults write com.apple.finder QuitMenuItem -bool true
 
 echo "Show hidden files by default"
-#defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 echo "Show all filename extensions"
-#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 echo "Show path bar"
 defaults write com.apple.finder ShowPathbar -bool true
