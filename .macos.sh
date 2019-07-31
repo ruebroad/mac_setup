@@ -12,9 +12,9 @@
 # fi
 # ssh-keygen -b 2048 -t rsa -f /tmp/sshkey -q -N SSH_PASSPHRASE
 
-# ###############################################################################
-# # General UI/UX                                                               #
-# ###############################################################################
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
 
 # echo "Set computer name (as done via System Preferences → Sharing)"
 # sudo scutil --set ComputerName "$COMPUTER_NAME"
@@ -29,53 +29,53 @@ echo "Disable automatic period substitution as it’s annoying when typing code"
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # Only needed for the hackintosh
-echo "Disabling power nap and wake from standby"
-sudo pmset -a standby 0
+# echo "Disabling power nap and wake from standby"
+# sudo pmset -a standby 0
 
-echo "Prevent computer sleep mode"
-sudo systemsetup -setcomputersleep Off > /dev/null
+# echo "Prevent computer sleep mode"
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
-echo "Disable audio feedback when volume is changed"
-defaults write com.apple.sound.beep.feedback -bool false
+# echo "Disable audio feedback when volume is changed"
+# defaults write com.apple.sound.beep.feedback -bool false
 
-echo "Disable the sound effects on boot"
-sudo nvram SystemAudioVolume=" "
+# echo "Disable the sound effects on boot"
+# sudo nvram SystemAudioVolume=" "
 
-echo "Menu bar: disable transparency"
-defaults write com.apple.universalaccess reduceTransparency -bool true
+# echo "Menu bar: disable transparency"
+# defaults write com.apple.universalaccess reduceTransparency -bool true
 
-echo "Menu bar: show battery percentage"
-defaults write com.apple.menuextra.battery ShowPercent YES
+# echo "Menu bar: show battery percentage"
+# defaults write com.apple.menuextra.battery ShowPercent YES
 
-echo "Expand save panel by default"
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+# echo "Expand save panel by default"
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
-echo "Expand print panel by default"
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+# echo "Expand print panel by default"
+# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-echo "Save to disk (not to iCloud) by default"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+# echo "Save to disk (not to iCloud) by default"
+# defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-echo "Automatically quit printer app once the print jobs complete"
-defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+# echo "Automatically quit printer app once the print jobs complete"
+# defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-echo "Disable the “Are you sure you want to open this application?” dialog"
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+# echo "Disable the “Are you sure you want to open this application?” dialog"
+# defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-echo "Disable Resume system-wide"
-defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+# echo "Disable Resume system-wide"
+# defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
-echo "Restart automatically if the computer freezes"
-sudo systemsetup -setrestartfreeze on
+# echo "Restart automatically if the computer freezes"
+# sudo systemsetup -setrestartfreeze on
 
-echo "Disable Notification Center and remove the menu bar icon"
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# echo "Disable Notification Center and remove the menu bar icon"
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
-echo "Disable smart quotes and dashes as they’re annoying when typing code"
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+# echo "Disable smart quotes and dashes as they’re annoying when typing code"
+# defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+# defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -133,7 +133,8 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 echo "Save screenshots to the desktop"
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+mkdir -p "${HOME}/Screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 
 echo "Save screenshots in PNG format"
 #  other options: BMP, GIF, JPG, PDF, TIFF
