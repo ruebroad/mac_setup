@@ -1,26 +1,26 @@
-COMPUTER_NAME="abroad"
+# COMPUTER_NAME="abroad"
 
-## Add a real one before running
-$SSH_PASSPHRASE="***********?"
+# ## Add a real one before running
+# $SSH_PASSPHRASE="***********?"
 
-osascript -e 'tell application "System Preferences" to quit'
+# osascript -e 'tell application "System Preferences" to quit'
 
 
-echo "Creating new SSH key - feel free to overwrite if you have a backup"
-if [[$SSH_PASSPHRASE = "Password"]]
-	read -p "Enter a proper SSH passphrase: " SSH_PASSPHRASE
-fi
-ssh-keygen -b 2048 -t rsa -f /tmp/sshkey -q -N SSH_PASSPHRASE
+# echo "Creating new SSH key - feel free to overwrite if you have a backup"
+# if [[$SSH_PASSPHRASE = "Password"]]
+# 	read -p "Enter a proper SSH passphrase: " SSH_PASSPHRASE
+# fi
+# ssh-keygen -b 2048 -t rsa -f /tmp/sshkey -q -N SSH_PASSPHRASE
 
-###############################################################################
-# General UI/UX                                                               #
-###############################################################################
+# ###############################################################################
+# # General UI/UX                                                               #
+# ###############################################################################
 
-echo "Set computer name (as done via System Preferences → Sharing)"
-sudo scutil --set ComputerName "$COMPUTER_NAME"
-sudo scutil --set HostName "$COMPUTER_NAME"
-sudo scutil --set LocalHostName "$COMPUTER_NAME"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+# echo "Set computer name (as done via System Preferences → Sharing)"
+# sudo scutil --set ComputerName "$COMPUTER_NAME"
+# sudo scutil --set HostName "$COMPUTER_NAME"
+# sudo scutil --set LocalHostName "$COMPUTER_NAME"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
 echo "Disable auto capitalisation"
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false

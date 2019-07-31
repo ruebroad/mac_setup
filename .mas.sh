@@ -4,7 +4,7 @@
 # Installs appstore apps - note you need to do XCode seperatly
 # and you must have previously logged into the app store
 
-brew install mas
+# brew install mas
 
 # mas install 412347921   # OmmWriter (1.55)
 # mas install 409183694   # Keynote (8.2)
