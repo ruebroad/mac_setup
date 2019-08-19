@@ -30,11 +30,16 @@
     "!Split scalar",
     "!Join sequence",
     "!Condition"
-],
-"yaml.format.enable": true,
-"cfnLint.path": "/usr/local/bin/cfn-lint",
-"window.zoomLevel": 0,
-"indenticator.inner.showHighlight": true,
-"editor.cursorStyle": "underline",
-"workbench.editor.showTabs": false
+  ],
+  "yaml.format.enable": true,
+  "cfnLint.path": "/usr/local/bin/cfn-lint",
+  "window.zoomLevel": 1,
+  "indenticator.inner.showHighlight": true,
+  "editor.cursorStyle": "underline",
+  "breadcrumbs.enabled": true,
+  "zenMode.hideTabs": false,
+  "editor.tabCompletion": "on",
+  "workbench.editor.revealIfOpen": true,
+  "editor.formatOnSave": true,
+  "problems.autoReveal": false
 }

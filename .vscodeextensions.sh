@@ -20,9 +20,6 @@ code --install-extension burtlo.inspec
 # Chef
 code --install-extension pendrica.chef
 
-# Docker
-code --install-extension peterjausovec.vscode-docker
-
 echo "Installing extensions for language support"
 # C++
 # code --install-extension ms-vscode.cpptools
@@ -103,17 +100,33 @@ code --install-extension sirtori.indenticator
 # MSSQL
 code --install-extension ms-mssql.mssq
 
-# Kubernetes
+# Kubernetes & Docker
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension dunstontc.vscode-docker-syntax
 code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension peterjausovec.vscode-docker
 
 # CloudFormation
 code --install-extension aws-scripting-guy.cform
 code --install-extension pdefreitas.cf-octopus-generator
 code --install-extension champgm.cloudformation-yaml-validator
 code --install-extension kddejong.vscode-cfn-lint
+code --install-extension pradiphudekar.cf-templates
+code --install-extension dsteenman.cloudformation-yaml-snippets
+
+# Markdown
+code --install-extension davidanson.vscode-markdownlint
 
 # Python
 code --install-extension ms-python.python
+
+# Terraform
+code --install-extension mindginative.terraform-snippets
+code --install-extension erd0s.terraform-autocomplete
+code --install-extension sahmed.terraform-comments-beautifier
+code --install-extension run-at-scale.terraform-doc-snippets
+code --install-extension itayadler.terraform-ssm
+code --install-extension mauve.terraform
 
 echo "Finished installing VS Code extensions."
 

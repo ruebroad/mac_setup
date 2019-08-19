@@ -48,6 +48,7 @@ brew install qt
 # brew install sphinx-doc
 # brew install sqlite
 # brew install ssh-copy-id
+brew install telnet
 brew install terraform
 # brew install the_silver_searcher
 # brew install tmux

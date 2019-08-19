@@ -10,10 +10,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Install Powerlevel9K statusline plugin
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+# Install autocomplete suggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# add plugins=(zsh-autosuggestions)
+
 # Install extensions
 brew install zsh-syntax-highlighting
 brew install zsh-completions
-brew install zsh-autosuggestions
 
 echo "Moving zsh config files to user root"
 # Get and use pre-configured .zshrc file
