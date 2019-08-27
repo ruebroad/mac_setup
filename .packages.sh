@@ -14,7 +14,7 @@ echo "Installing packages..."
 # brew install ack
 # brew install autoconf
 # brew install automake
-brew install awscli
+
 brew install bash-completion
 brew install docker-compose
 # brew install gdbm
@@ -49,7 +49,6 @@ brew install qt
 # brew install sqlite
 # brew install ssh-copy-id
 brew install telnet
-brew install terraform
 # brew install the_silver_searcher
 # brew install tmux
 # brew install todolist
@@ -65,7 +64,20 @@ brew install zsh-syntax-highlighting
 brew install zsh-completions
 brew install zsh-autosuggestions
 
+# Terraform
+brew install terraform
+brew install tflint
+
 # Cloudformation
 brew install cfn-lint
+
+# AWS 
+brew install awscli
+brew install jq
+brew tap coinbase/assume-role
+brew install assume-role
+
+# Github Secrets Protection - requires addtional config
+brew install git-secrets
 
 echo "Finished installing packages."

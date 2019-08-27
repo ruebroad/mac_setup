@@ -41,5 +41,6 @@
   "editor.tabCompletion": "on",
   "workbench.editor.revealIfOpen": true,
   "editor.formatOnSave": true,
-  "problems.autoReveal": false
+  "problems.autoReveal": false,
+  "[terraform]editor.formatOnSave": true
 }
