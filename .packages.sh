@@ -76,8 +76,17 @@ brew install awscli
 brew install jq
 brew tap coinbase/assume-role
 brew install assume-role
+brew tap dkanejs/aws-session-manager-plugin
+brew install aws-session-manager-plugin
+brew install aws-iam-authenticator
+
+# Python
+brew install pipenv
 
 # Github Secrets Protection - requires addtional config
 brew install git-secrets
+
+# Azure
+brew install azure-cli
 
 echo "Finished installing packages."
